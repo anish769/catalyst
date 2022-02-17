@@ -1,0 +1,435 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.background-image{
+	position: absolute;
+}
+.background-image img{
+	height: auto;
+	width: 100%;
+	background-attachment: fixed;
+	position: fixed;
+}
+.layout{
+    padding: 85px 112px 71px 91px;
+    margin-bottom: 100px;
+}
+
+.first-block {
+	width: 50%;
+	height: 1460px;
+	background-color: black;
+	border-radius: 1px;
+	font-family: roboto, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	color: white;
+	position: relative;
+	filter: alpha(opacity=70);
+	-moz-opacity:0.7;
+	opacity: 0.7;
+	float: left;
+	padding-bottom: 70px;
+}
+
+.first-block i{
+	font-size:56px;
+}
+.icon {
+	margin-top: 160px;
+}
+.first-block h1{
+	padding:30px 2px;
+  margin-top: 250px;
+}
+.mauris-vivvera h2 {
+	margin-top: 160px;
+	font-family: arial;
+}
+.contact-info h2{
+	text-align: left;
+	margin-top: 435px;
+	margin-bottom: 10px;
+}
+.first-block p{
+		margin-left: 25px;
+		margin-right: 25px;
+    padding-top: 3px;
+    text-align: left;
+    text-align: justify;
+}
+.first-block button{
+	padding: 8px 15px;
+	background-color: #f50648;
+	color: white;
+	border:none;
+	cursor: pointer;
+	margin-left:300px;
+}
+.first-block button:hover {background-color: #3e8e41}
+.first-block h4{
+	padding-top: 130px;
+	text-align: left;
+}
+.first-block{
+	text-align: center;
+}
+
+.container{
+  width: 190px;
+  height: 122px;
+  margin: -100px auto
+  top:50%;
+  left:50%;
+  display:block;
+  position:absolute;
+  animation:drunk 5s linear infinite alternate
+  }
+
+@keyframes drunk{
+  0%,40%,80%{transform:translate(-50%,-50%) rotate(-15deg)}
+  20%,60%,100%{transform:translate(-50%,-50%) rotate(15deg)}
+  }
+
+.body-penguin{
+  background:#000;
+  width:190px;
+  height:160px;
+  margin: 121px auto;
+  display:block;
+  position:relative;
+  border-radius:50%;
+  box-shadow:0 8px 6px -6px rgba(0,0,0,.5)
+  }
+
+.body-penguin:before{
+  background:#fff;
+  content:"";
+  width:90px;
+  height:47px;
+  bottom:10px;
+  left:50%;
+  display:block;
+  position:absolute;
+  border-radius:50%;
+  transform:translate(-50%,0);
+  box-shadow:inset 0 -30px 2px 0 #e6e6e6
+  }
+
+.eye{
+  width:80px;
+  height:50px;
+  top:30px;
+  left:50%;
+  display:block;
+  position:absolute;
+  transform:translate(-50%,0)
+  }
+
+.eye:before,
+.eye:after{
+  background-color:#fff;
+  background-image:radial-gradient(closest-side at 50% 50%,#000,#000,#000,#000,#000,#000,rgba(0,0,0,0));
+  background-repeat:no-repeat;
+  background-size:15px 15px;
+  content:"";
+  width:40px;
+  height:100%;
+  top:0;
+  display:block;
+  position:absolute;
+  border-radius:50%
+  }
+
+.eye:before
+  {left:5px;animation:eye-left 5s linear infinite alternate}
+
+@keyframes eye-left{
+  0%,40%,80%{background-position:15px 25px}
+  20%,60%,100%{background-position:15px 15px}
+  }
+
+.eye:after
+  {right:5px;animation:eye-right 5s linear infinite alternate}
+
+@keyframes eye-right{
+  0%,40%,80%{background-position:8px 15px}
+  20%,60%,100%{background-position:8px 25px}
+  }
+
+.nose{
+  background:linear-gradient(230deg,#cc7a00,#e68a00,#ff9900,#ffa31a,#ffad33,#ffb84d);
+  width:30px;
+  height:30px;
+  top:40%;
+  left:50%;
+  display:block;
+  position:absolute;
+  border-radius:50% 50% 0 50%;
+  box-shadow:4px 0 2px 0 rgba(0,0,0,.5);
+  transform:translate(-50%,-40%) rotate(50deg)
+  }
+
+.hand{
+  width:210px;
+  height:50px;
+  top:40px;
+  left:50%;
+  display:block;
+  position:absolute;
+  transform:translate(-50%,0)
+  }
+
+.hand:before,
+.hand:after{
+  background-color:#000;
+  background-image:radial-gradient(closest-side at 50% 50%,#fff,#fff,#fff,#fff,#fff,rgba(0,0,0,0));
+  background-repeat:no-repeat;
+  background-size:50px 130px;
+  content:"";
+  width:40px;
+  height:100px;
+  top:5px;
+  display:block;
+  position:absolute;
+  box-shadow:inset 0 10px 2px 0 #111
+  }
+
+.hand:before{
+  background-position:30px top;
+  left:-10px;
+  border-radius:20px 20px 0 100%;
+  animation:hand-left 5s linear infinite alternate
+  }
+
+@keyframes hand-left{
+  0%,40%,80%{transform:rotate(45deg)}
+  20%,60%,100%{transform:rotate(60deg)}
+  }
+
+.hand:after{
+  background-position:-40px top;
+  right:-10px;
+  border-radius:20px 20px 100% 0;
+  animation:hand-right 5s linear infinite alternate
+  }
+
+@keyframes hand-right{
+  0%,40%,80%{transform:rotate(-45deg)}
+  20%,60%,100%{transform:rotate(-60deg)}
+  }
+
+.foot{
+  width:150px;
+  height:50px;
+  bottom:-30px;
+  left:50%;
+  z-index:-1;
+  display:block;
+  position:absolute;
+  transform:translate(-50%,0)
+  }
+
+.foot:before,
+.foot:after{
+  content:"";
+  width:60px;
+  height:30px;
+  top:0;
+  display:block;
+  position:absolute;
+  border-radius:0 0 50% 50%
+  }
+
+.foot:before{
+  background:linear-gradient(230deg,#cc7a00,#e68a00,#ff9900,#ffa31a,#ffad33,#ffb84d);
+  left:0;
+  animation:foot-left 5s linear infinite alternate
+  }
+
+@keyframes foot-left{
+  0%,40%,80%{transform:rotate(15deg) skewX(-45deg) scale(1,1)}
+  20%,60%,100%{transform:rotate(15deg) skewX(-45deg) scale(.5,1)}
+  }
+
+.foot:after{
+  background:linear-gradient(-230deg,#cc7a00,#e68a00,#ff9900,#ffa31a,#ffad33,#ffb84d);
+  right:0;
+  animation:foot-right 5s linear infinite alternate
+  }
+
+@keyframes foot-right{
+  0%,40%,80%{transform:rotate(-15deg) skewX(45deg) scale(.5,1)}
+  20%,60%,100%{transform:rotate(-15deg) skewX(45deg) scale(1,1)}
+  }
+/*                                            ! Drunk Penguin Ended Here ...
+=======================================================================================================================*/
+
+/* This Is Not Part Of Drunk Penguin */
+.me{
+  background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1735448/profile/profile-80.jpg?1528976396")no-repeat center / contain;
+  width:40px;
+  height:40px;
+  bottom:16px;
+  right:16px;
+  display:block;
+  position:fixed;
+  border-radius:50%;
+  animation:me 2s linear infinite alternate
+  }
+
+@keyframes me{
+  from{transform:translateY(-4px)}
+  to{transform:translateY(4px)}
+  }
+
+.me:hover span
+  {right:50px;opacity:1;visibility:visible}
+
+.me span{
+  width:150px;
+  top:10px;
+  right:0;
+  display:block;
+  position:absolute;
+  color:#008080;
+  font-size:16px;
+  font-family:Tahoma,Geneva,sans-serif;
+  font-style:normal;
+  font-weight:400;
+  text-align:center;
+  z-index:-1;
+  opacity:0;
+  visibility:hidden;
+  transition:all .5s ease
+  }
+.second-block {
+  width: 50%;
+  height: 1460px;
+  background-color: white;
+  border-radius: 1px;
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: black;
+  filter: alpha(opacity=70);
+  -moz-opacity:0.7;
+  opacity: 0.7;
+  float: left;
+  padding-bottom: 70px;
+
+}
+.second-block h2 {
+  font-family: arial;
+  margin-top: 90px;
+  text-align: center;
+  color: teal;
+}
+.second-block p{
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+.form1{
+  margin-top: 1000px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.name {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+}
+.email{
+  width: 100%;
+  height: 30px;
+  background-color: white;
+}
+.message {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+}
+.button {
+  padding: 10px 30px;
+  margin-left: 325px;
+  background-color: #f50648;
+  color: white;
+  border: none;
+}
+.second-block p {
+  color: gray;
+}
+.pic-section{
+  width: 100%;
+  margin-top: 55px;
+}
+.pic-sec1{
+  width: 250px;
+  height: 300px;
+  display: inline-block;
+  float: left;
+}
+.pic-sec2 {
+  width: 250px;
+  height:300px;
+  display: inline-block;
+  float: right;
+  margin-top: 50px;
+}
+.keep img{
+    height: 210px;
+    width: 220px;
+    position: absolute;
+    margin-top: 31px;
+    margin-left: 15px;
+    border-bottom: 10px;
+}
+.crystal img{
+  height: 210px; 
+  width: 220px;
+  position: absolute;
+  margin-top: 260px;
+  margin-left: 15px; 
+}
+.crystal{
+   display: inline-block;
+}
+.bird img {
+  height: 210px;
+  width: 220px;
+  position: absolute;
+  margin-top: 31px;
+  background-image: none;
+}
+.city img{
+  height: 210px; 
+  width: 220px;
+  position: absolute;
+  margin-top: 260px;
+}
+.box{
+  width: 950px;
+  height: 200px;
+  background-color: #d41f9d;
+  position: absolute;
+  margin-top: 619px;
+  margin-left: 146px;
+}
+.box h2{
+  text-align: center;
+  color: white;
+  font-family: monospace;
+}
+.small-box{
+    width: 890px;
+    height: 279px;
+    background-color: white;
+    position: absolute;
+    margin-top: 654px;
+    margin-left: 174px;
+}
+
